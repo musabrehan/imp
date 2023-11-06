@@ -43,6 +43,9 @@ if (document.getElementById("construction-license")) {
   };
 }
 
+
+/** Uncomment Here 
+
 $("#withdrawal_btn").on("click", (e) => {
   e.preventDefault();
 
@@ -175,3 +178,5 @@ $("#withdrawal_btn").on("click", (e) => {
     }
   });
 });
+
+ /**  * */
