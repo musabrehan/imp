@@ -10,6 +10,7 @@ $("#upgrade__btn").on("click", (e) => {
     let lang = $("html").attr("lang") == "ar" ? "ar" : "en";
 
     let msg = $('#upgrade_pro_account_text').data('swal-msg');
+    let fail_msg = $('#upgrade_pro_account_text').data('swal-failed-msg');
     let image = $('#upgrade_pro_account_text').data('swal-image');
     let token = $('#upgrade_pro_account_text').data('swal-confirm-token');
     let confirm_action = $('#upgrade_pro_account_text').data('swal-confirm-route');
@@ -85,7 +86,7 @@ $("#upgrade__btn").on("click", (e) => {
                             className: "swalIcon",
                         },
                     },
-                    title: 'Fails',
+                    title: fail_msg,
                 });
             }
         });
