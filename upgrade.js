@@ -53,8 +53,7 @@ $("#upgrade__btn").on("click", (e) => {
     })
         .then((isConfirm) => {
             
-            console.log('elo,', token);
-            // return ;
+             // return ;
             if (isConfirm) {
                 var url = confirm_action;
                 var response = $.post(url, { "_token": token }).then((v) => {
@@ -79,14 +78,24 @@ $("#upgrade__btn").on("click", (e) => {
                 });
             } else {
                 swal({
-                    content: {
-                        element: "img",
-                        attributes: {
-                            src: failed_image,
-                            className: "swalIcon",
+                    // content: {
+                    //     element: "img",
+                    //     attributes: {
+                    //         src: failed_image,
+                    //         className: "swalIcon",
+                    //     },
+                    // },
+                    title: fail_msg,
+
+                    buttons: {
+                        confirm: {
+                            text: confirmTxt,
+                            value: true,
+                            visible: true,
+                            className: "confirmBtn",
+                            closeModal: true,
                         },
                     },
-                    title: fail_msg,
                 });
             }
         });
