@@ -381,6 +381,7 @@
     "The higher the value of your investment, the higher the return you will get.": "كلما زادت قيمة استثمارك ، زاد العائد الذي ستحصل عليه.",
     "Chart": "المخطط البياني",
     "Real Estate Funds": "الصناديق العقارية",
+    "Investment Funds": "  الصناديق العقارية والاستثمارية",
     "All real estate funds offered on the platform are managed by financial companies licensed by the Capital Market Authority.": "تدار جميع الصناديق العقارية المعروضة على المنصة من قبل شركات مالية مرخصة من قبل هيئة السوق المالية.",
     "All opportunities offered on the platform are in compliance with the principles of Islamic Sharia.": "جميع الفرص المتاحة على المنصة متوافقة مع مبادئ الشريعة الإسلامية.",
     "How does the platform work": "كيف تعمل المنصة",
@@ -1511,6 +1512,7 @@
     "Fundbox Files":"ملفات الصندوق",
     "Expired After N Months":"المدة الاولية للصندوق",
     "Upgrade Account": "ترقية الحساب",
-    "Upgarde Your Account to Show Funds Before Start Of Funds Distribution" : "يمكنك ترقية حسابك للاطلاع على الصناديق قبل طرحها "
+    "Upgarde Your Account to Show Funds Before Start Of Funds Distribution" : "يمكنك ترقية حسابك للاطلاع على الصناديق قبل طرحها ",
+    "Process Canceled": "تم الغاء العملية"
 
 }
