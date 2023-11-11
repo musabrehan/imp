@@ -13,25 +13,21 @@
             <div class="container">
                 <div class="landing-content__container flex-center">
                     <div class="landing__content" data-aos="fade-right" data-aos-duration="1000">
-                        <h1 class="landing__title">{{ __('Real Estate Funds') }}</h1>
+                        <h1 class="landing__title">{{ __('Investment Funds') }}</h1>
                         <p class="landing__body">
                             {{ __('All real estate funds offered on the platform are managed by financial companies licensed by the Capital Market Authority.') }}
                         </p>
                         {{-- Add Upgrade Buttons and Functionality here --}}
-                        @auth
+                        {{-- @auth
                             @if (!auth()->user()->is_upgraded)
                                 <p class="landing__body" style="font-weight: 600;">
                                     [ النص التوجيهي لترقية الحساب ]
                                 </p>
-                                {{-- <a href="#" class="landing__btn btn">
-                                    {{ __('ترقية الحساب هنا') }}
-                                    <i class="fa-regular fa-crown landing__icon icon"></i>
-                                </a> --}}
                                 <a href="#" class="upgrade__btn btn landing__btn btn" id="upgrade__btn"
                                     data-bs-target="#upgrade_pro_account">{{ __('Upgrade Account') }}<i
                                         class="fa-regular fa-crown landing__icon icon"></i></a>
                             @endif
-                        @endauth
+                        @endauth --}}
                         {{-- End Of Upgrade Button --}}
                         <p class="landing__body" style="font-weight: 600;">
                             {{ __('If you want a fund to invest in rehan') }}
