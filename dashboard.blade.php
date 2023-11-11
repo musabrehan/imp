@@ -303,7 +303,7 @@
                     data-swal-success-icon="{{ asset('assets/modal-icons/success.svg') }}"
                     data-swal-error-icon="{{ asset('assets/modal-icons/error.svg') }}"
                     data-swal-failed-icon="{{ asset('assets/modal-icons/failed.svg') }}"
-                    data-swal-failed-msg="{{__('Process Failed')}}"
+                    data-swal-failed-msg="{{__('Process Canceled')}}"
                     data-swal-success-msg="{{ __('Account Upgrade Was Successful') }}">
                 </div>
             </div>
