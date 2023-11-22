@@ -224,6 +224,8 @@
                         </div>
                     </div>
 
+                    @if ($fundbox->address == '-' || !$fundbox->address)
+                    @else
                     <div class="accordion-item sec" data-aos="fade-up-left" data-aos-duration="1000">
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -246,6 +248,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
 
                     <div class="accordion-item sec" data-aos="fade-up-left" data-aos-duration="1000">
                         <h2 class="accordion-header">
