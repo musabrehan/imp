@@ -10,6 +10,7 @@ $("#upgrade__btn").on("click", (e) => {
     let lang = $("html").attr("lang") == "ar" ? "ar" : "en";
 
     let msg = $('#upgrade_pro_account_text').data('swal-msg');
+    let fail_msg = $('#upgrade_pro_account_text').data('swal-failed-msg');
     let image = $('#upgrade_pro_account_text').data('swal-image');
     let token = $('#upgrade_pro_account_text').data('swal-confirm-token');
     let confirm_action = $('#upgrade_pro_account_text').data('swal-confirm-route');
@@ -52,8 +53,7 @@ $("#upgrade__btn").on("click", (e) => {
     })
         .then((isConfirm) => {
             
-            console.log('elo,', token);
-            // return ;
+             // return ;
             if (isConfirm) {
                 var url = confirm_action;
                 var response = $.post(url, { "_token": token }).then((v) => {
@@ -78,14 +78,24 @@ $("#upgrade__btn").on("click", (e) => {
                 });
             } else {
                 swal({
-                    content: {
-                        element: "img",
-                        attributes: {
-                            src: failed_image,
-                            className: "swalIcon",
+                    // content: {
+                    //     element: "img",
+                    //     attributes: {
+                    //         src: failed_image,
+                    //         className: "swalIcon",
+                    //     },
+                    // },
+                    title: fail_msg,
+
+                    buttons: {
+                        confirm: {
+                            text: confirmTxt,
+                            value: true,
+                            visible: true,
+                            className: "confirmBtn",
+                            closeModal: true,
                         },
                     },
-                    title: 'Fails',
                 });
             }
         });
