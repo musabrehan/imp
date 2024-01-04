@@ -1,0 +1,3 @@
+  Files::make(__('Multiple files'), 'bank_proof')
+            ->rules('required', 'max:5')
+            ->singleMediaRules('mimes:pdf,doc,docx,mp4'),

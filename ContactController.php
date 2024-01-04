@@ -47,9 +47,7 @@ class ContactController extends Controller
     {
 
 
-        $token = env('MONDAY_TOKEN');
-
-
+        $token = "";
 
         $apiUrl = 'https://api.monday.com/v2';
         $headers = ['Content-Type: application/json', 'Authorization: ' . $token];
@@ -69,16 +67,16 @@ class ContactController extends Controller
             $type =         'Real Estate Developer';
         }
 
-        $query = 'mutation ($myItemName: String!, $columnVals: JSON!) { create_item (board_id:1328010160, item_name:$myItemName, column_values:$columnVals) { id } }';
+        $query = 'mutation ($myItemName: String!, $columnVals: JSON!) { create_item (board_id:5573701491, item_name:$myItemName, column_values:$columnVals) { id } }';
         $vars = [
             'myItemName' => $contact->name,
             'columnVals' => json_encode([
                 'status' => ['label' => 'New'],
                 'date4' => ['date' => $B],
                 'text' =>  $contact->email,
-                'text4' =>  $contact->phone,
-                'text9' =>  $type,
-                'text3' =>  $contact->message
+                'text8' =>  $contact->phone,
+                'text1' =>  $type,
+                'text9' =>  $contact->message
             ])
         ];
 

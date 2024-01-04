@@ -32,8 +32,7 @@ class SupportController extends Controller
     {
 
 
-        logger('OJ');
-        $token = env('MONDAY_TOKEN');
+        $token = "";
 
 
         $apiUrl = 'https://api.monday.com/v2';
@@ -51,8 +50,8 @@ class SupportController extends Controller
                 'status' => ['label' => 'New'],
                 'date4' => ['date' => $B],
                 'text' =>  $support->email,
-                'text9' =>  $support->phone,
-                'text0' =>  $support->message
+                'text4' =>  $support->phone,
+                'text2' =>  $support->message
             ])
         ];
 
