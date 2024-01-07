@@ -1,0 +1,25 @@
+  //------------------------------------------------------//
+            /* 
+             * Lines +150 After Start Dates 
+             * Update Fund End Dates 
+             * End Date 
+             * Invest End Date 
+             */
+            DateTime::make(__('fundbox_end_invest_date'), 'end_invest_date')
+                ->rules('nullable'),
+
+            DateTime::make(__('fundbox_end_date'), 'end_date')
+                ->rules('nullable'),
+            /*
+             * Lines +160 , after Date And Time
+             * Update Fund Status
+             * [hidden.viewOnly,Investable,closed,expired]
+             */
+            Select::make(__('Status'), 'status')
+                ->searchable()
+                ->options(Status::options())
+                ->displayUsingLabels()
+                ->rules('required')
+                ->onlyOnForms(),
+            // End of Update Fund Status
+            //------------------------------------------------------//
